@@ -1,0 +1,22 @@
+#site-footer{
+	padding: 60px 0;
+	.quote{
+		h3{
+			@include font-zilla;
+			color: #666;
+			font-size: 22px;
+		}
+	}
+}
+
+.social-links{
+	padding: 25px 0;
+	a{
+		color: var(--lightgrey);
+		font-size: 25px;
+		margin-right: 10px;
+		&:hover{
+			color: var(--black);
+		}
+	}
+}

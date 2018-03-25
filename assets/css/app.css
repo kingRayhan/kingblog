@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+a:hover {
+  color: var(--primary); }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/**
+ * Fonts
+ */
+@font-face {
+  font-family: 'settledown';
+  src: url("../fonts/settle_down-webfont.woff2") format("woff2"), url("../fonts/settle_down-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+td, th {
+  border: 1px solid #ddd;
+  padding: 5px; }
+
+dd {
+  margin-left: 40px; }
+
+code {
+  display: block;
+  padding: 10px; }
+
+.app-navbar {
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+  background-color: #FFF; }
+  .app-navbar a {
+    color: var(--black); }
+    .app-navbar a:hover {
+      color: var(--primary); }
+  .app-navbar .navbar-brand {
+    font-family: 'Zilla Slab', serif;
+    font-size: 30px; }
+
+.footer-bottom {
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  background-color: #ecf2f3; }
+  .footer-bottom h6 {
+    font-size: 12px;
+    color: #888888; }
+  .footer-bottom .btn-footer-bottom {
+    width: 100%;
+    max-width: 130px;
+    display: block;
+    margin: 0 auto;
+    color: #888;
+    border: none;
+    padding: 0;
+    background: transparent; }
+    .footer-bottom .btn-footer-bottom .fa {
+      display: block;
+      font-size: 26px;
+      line-height: 14px; }
+    .footer-bottom .btn-footer-bottom span {
+      display: inline-block;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700; }
+
+.article-list {
+  margin-top: 45px; }
+  .article-list .article-card {
+    margin-bottom: 55px; }
+
+.article-card {
+  background-color: #FFF;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1); }
+  .article-card img.article-thumbnail-img {
+    max-width: 100%; }
+  .article-card .article-content {
+    padding: 15px; }
+    .article-card .article-content .title {
+      margin-top: 12px;
+      font-family: 'Zilla Slab', serif;
+      font-weight: bold; }
+      .article-card .article-content .title a {
+        color: var(--black); }
+
+.article-meta-info {
+  overflow: hidden;
+  padding: 8px 0; }
+  .article-meta-info a {
+    color: var(--lightgrey); }
+  .article-meta-info .author-name, .article-meta-info .publish-time, .article-meta-info .sep {
+    float: left;
+    padding-right: 12px; }
+
+.readmore a {
+  font-family: 'Zilla Slab', serif;
+  color: #333;
+  font-weight: bold; }
+
+/**
+ * Pagination
+ */
+.page-nav-prev,
+.page-nav-next {
+  margin: 0;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #585b60;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block; }
+
+.page-nav-prev:hover, .page-nav-prev:focus,
+.page-nav-next:hover,
+.page-nav-next:focus {
+  color: #222; }
+
+.page-current {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--lightgrey); }
+
+.page-nav-prev:before, .page-nav-next:before {
+  transition: 300ms; }
+
+.page-nav-prev:before {
+  content: "\f100";
+  font-family: fontawesome;
+  position: absolute;
+  top: 15px;
+  left: 12px; }
+
+.page-nav-prev:hover:before {
+  left: 8px; }
+
+.page-nav-next:before {
+  content: "\f101";
+  font-family: fontawesome;
+  position: absolute;
+  top: 15px;
+  right: 12px; }
+
+.page-nav-next:hover:before {
+  right: 8px; }
+
+/**
+ * Grid List
+ */
+.single-grid {
+  margin-bottom: 30px; }
+
+/**
+ * Archieve
+ */
+.archieve-header {
+  padding: 25px 0; }
+  .archieve-header h1 {
+    font-family: 'Zilla Slab', serif; }
+
+.single-page-article-container {
+  background-color: #FFF;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); }
+
+.single-page-bannel {
+  background-image: url(https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-0.3.5ΓÇªEyMDd9&s=dd4d735ΓÇª&auto=format&fit=crop&w=1267&q=80) !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  height: 450px; }
+
+.single [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0; }
+.single .fullwidth-img, .single .thumbnail {
+  margin-left: -100px;
+  margin-right: -100px; }
+.single .fullwidth-img img, .single .thumbnail img {
+  width: 100%; }
+
+.single-page-article {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 5%; }
+  .single-page-article .article-header .title {
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    line-height: 1.3em;
+    padding-bottom: 0;
+    margin: 0; }
+
+.entry-tools {
+  padding: 35px 0; }
+  .entry-tools .categories {
+    float: left; }
+  .entry-tools .social-share {
+    float: right; }
+    .entry-tools .social-share .social-share-btn {
+      color: #FFF;
+      padding: 4px 14px;
+      margin-right: 5px; }
+    .entry-tools .social-share .twitter {
+      background: #1DA1F2; }
+    .entry-tools .social-share .facebook {
+      background: #4267B2; }
+  .entry-tools a:hover {
+    text-decoration: none;
+    opacity: .8; }
+
+.categories a {
+  background: #eee;
+  padding: 4px 11px;
+  display: inline-block;
+  color: #484848;
+  text-transform: uppercase;
+  font-size: 13px; }
+
+#banner {
+  background-image: url(../img/pattern.png);
+  background-color: var(--primary); }
+
+#site-title {
+  font-family: 'settledown';
+  font-weight: 100;
+  position: relative;
+  z-index: 3;
+  color: #FFF;
+  margin: 10px 0; }
+  #site-title:before {
+    content: '';
+    position: absolute;
+    height: 25%;
+    -webkit-transform: translateY(90%) rotate(-0.3deg);
+    transform: translateY(90%) rotate(-0.3deg);
+    width: 102%;
+    background: #1b1b1b;
+    left: -1%;
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    top: 14%; }
+  @media (max-width: 780px) {
+    #site-title:before {
+      background: transparent;
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0.4); } }
+  #site-title span {
+    display: inline-block;
+    transition: all 0.2s;
+    font-size: 8vw; }
+    @media (max-width: 780px) {
+      #site-title span {
+        font-size: 25px; } }
+  #site-title span:hover {
+    -webkit-transform: scale(1.1) rotate(1deg);
+    transform: scale(1.3) rotate(1deg);
+    cursor: cell; }
+
+#site-description {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px; }
+
+body {
+  background-image: url(../img/pattern.svg); }
+
+#site-footer {
+  padding: 60px 0; }
+  #site-footer .quote h3 {
+    font-family: 'Zilla Slab', serif;
+    color: #666;
+    font-size: 22px; }
+
+.social-links {
+  padding: 25px 0; }
+  .social-links a {
+    color: var(--lightgrey);
+    font-size: 25px;
+    margin-right: 10px; }
+    .social-links a:hover {
+      color: var(--black); }
+
+/*# sourceMappingURL=app.css.map */

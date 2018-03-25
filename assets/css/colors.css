@@ -1,0 +1,7 @@
+:root{
+	--black: #333;
+	--primary: var(--yellow);
+	--yellow: #FFC600;
+	--sky: #56C6C0;
+	--lightgrey: #848484;
+}
