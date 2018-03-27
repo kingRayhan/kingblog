@@ -1,9 +1,7 @@
 const SiteTitle = document.querySelector('#site-title');
-
-SiteTitle.innerHTML = Array.from(SiteTitle.textContent).map( char => `<span>${char}</span>` ).join('');
-
-
-
+if( SiteTitle !== null ){
+	SiteTitle.innerHTML = Array.from(SiteTitle.textContent).map( char => `<span>${char}</span>` ).join('');
+}
 /**
  * Pagination Links
  */
@@ -29,3 +27,17 @@ jQuery(document).ready( function($){
 } );
 
 
+
+const AppNavbar = document.querySelector('.app-navbar');
+
+let LastScrollPosition = 0;
+window.addEventListener( 'scroll' , function(event){
+	var scrollPositionNow = window.scrollY;
+	if(scrollPositionNow > LastScrollPosition)
+	{
+		AppNavbar.classList.remove('sticky-top');
+	}else{
+		AppNavbar.classList.add('sticky-top');
+	}
+	LastScrollPosition = scrollPositionNow;
+} )

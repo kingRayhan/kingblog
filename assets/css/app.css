@@ -24,9 +24,12 @@ td, th {
 dd {
   margin-left: 40px; }
 
-code {
-  display: block;
-  padding: 10px; }
+blockquote {
+  background: #f7f6f6;
+  padding: 10px 12px;
+  border-left: 5px solid #DDD; }
+  blockquote p {
+    margin: 0; }
 
 .app-navbar {
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
@@ -258,9 +261,6 @@ code {
 #site-description {
   font-family: 'Indie Flower', cursive;
   font-size: 30px; }
-
-body {
-  background-image: url(../img/pattern.svg); }
 
 #site-footer {
   padding: 60px 0; }

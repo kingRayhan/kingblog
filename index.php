@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <div class="container pt-5">
+    
         <div class="row">
         	<div class="col-md-8 ml-auto mr-auto">
 				<?php  
@@ -13,5 +13,5 @@
 
 			</div>
         </div>
-    </div>
+    
 <?php get_footer(); ?>

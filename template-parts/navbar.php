@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md sticky-top app-navbar">
+<nav class="navbar navbar-expand-md app-navbar">
     <div class="container">
         <a class="navbar-brand" href="<?php echo site_url('/'); ?>">
 			Rayhan

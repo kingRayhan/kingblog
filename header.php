@@ -65,5 +65,24 @@ global $theme;
 </head>
 <body <?php body_class(); ?>>
 <div id="app">
-	<?php echo get_template_part('template-parts/banner') ?>
+	<?php 
+
+	/**
+	 * Page Banner
+	 */
+	if (is_home() && $theme['show_banner_in']['index'])
+	{
+		echo get_template_part('template-parts/banner');
+	}
+	if( is_page() && $theme['show_banner_in']['page'] )
+	{
+		echo get_template_part('template-parts/banner');
+	}
+	if( is_single() && $theme['show_banner_in']['single'] )
+	{
+		echo get_template_part('template-parts/banner');
+	}
+
+	?>
 	<?php echo get_template_part('template-parts/navbar') ?>
+	<div class="container" id="page-content">

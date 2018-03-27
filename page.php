@@ -12,14 +12,14 @@ get_header(); ?>
         <div class="row">
             <div class="col-md-12">
                 <article class="single-page-article">
-		<?php
-		while ( have_posts() ) :
-			the_post(); ?>
-					<?php if(has_post_thumbnail()): ?>
-					<div class="thumbnail">
-						<?php the_post_thumbnail() ?>
-					</div>
-					<?php endif; ?>
+                <?php
+                while ( have_posts() ) :
+                    the_post(); ?>
+                    <?php if(has_post_thumbnail()): ?>
+                    <div class="thumbnail">
+                        <?php the_post_thumbnail() ?>
+                    </div>
+                    <?php endif; ?>
                     <div class="entry-tools">
                         <div class="categories">
                         <?php
@@ -30,29 +30,28 @@ get_header(); ?>
                         ?>
                         </div>
                         <div class="social-share">
-                            <a target="_blank" class="twitter" data-network="Twitter" data-blog="The Mozilla Blog" href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                            <a target="_blank" class="facebook social-share-btn" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"></i> Share</a>
+                            <a target="_blank" class="twitter social-share-btn" href="https://twitter.com/home?status=<?php echo get_the_excerpt(); ?>"><i class="fa fa-twitter"></i> Twitter</a>
                         </div>
                     </div>
                     <div class="article-header">
                         <h1 class="title">
-							<?php the_title( ); ?>
-						</h1>
+                            <?php the_title( ); ?>
+                        </h1>
                     </div>
                     <div class="article-meta-info">
-                        <div class="publish-time">
-                            <a href="#">
-								March 15, 2018
-							</a>
+                        <div class="publish-time text-muted">
+                            <?php the_time( 'F d, Y' ) ?>
                         </div>
                     </div>
                     <div class="article-content">
-                    	<?php the_content(); ?>
+                        <?php the_content(); ?>
                     </div>
 
                 <?php
-        		  endwhile; // End of the loop.
-        		?>
-					
+                  endwhile; // End of the loop.
+                ?>
+                    
                 </article>
             </div>
         </div>

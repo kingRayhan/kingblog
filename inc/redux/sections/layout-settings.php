@@ -1,11 +1,10 @@
 <?php
 
     Redux::setSection( $opt_name, array(
-        'title'            => esc_html__( 'Layout', 'koffee' ),
+        'title'            => esc_html__( 'Layout', 'kingblog' ),
         'id'               => 'layout',
         'icon'             => 'el el-website',
         'fields'           => array(
-
             array(
                 'id'             => 'page_content_paddings',
                 'type'           => 'spacing',
@@ -16,26 +15,25 @@
                 'units'          => array( 'em', 'px', '%' ), 
                 'units_extended' => 'true',
                 'display_units' => 'px',
-                'title'          => esc_html__( 'Page Content Paddings', 'koffee' ),
+                'title'          => esc_html__( 'Page Content Paddings', 'kingblog' ),
                 'default'        => array(
                     'padding-top'    => '55px',
                     'padding-bottom' => '55px',
                 ),
-                'output' => array('.content-area#primary')
+                'output' => array('#page-content')
             ),
             array(
-                'id'    => 'main_content_bg',
+                'id'    => 'body_bg',
                 'type'  => 'background',
-                'title' => esc_html__('Main content Background','koffee'),
-                'subtitle'  => esc_html__('Controls the background of the main content area which is everything below header and above footer.','koffee'),
+                'title' => esc_html__('Body Background','kingblog'),
                 'default'  => array(
-                    'background-color' => '#FFFFFF',
                     'background-repeat' => 'no-repeat',
                     'background-size' => 'inherit',
                     'background-attachment' => 'scroll',
                     'background-position' => 'left top',
+                    'background-image' => get_template_directory_uri() . '/assets/img/pattern.svg'
                 ),
-                'output' => array('.content-area#primary')
+                'output' => array('body')
             ),
         /////////
         )

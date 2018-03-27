@@ -190,3 +190,49 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+
+
+.learnpress .single-page-article{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.learnpress .entry-tools,
+.learnpress .article-header,
+.learnpress .article-meta-info
+{
+	display: none;
+}
+.learnpress .single-page-article
+{
+	padding-bottom: 0;
+}
+
+.single-lp_course .single-page-article-container{ padding-top: 0;  }
+.single-lp_course .article-header{
+	display: block;
+}
+
+.single-lp_course .single-page-article-container {
+    padding-top: 10px !important;
+}
+.lp-button {
+    background-color: var(--primary);
+    border: none;
+    color: #FFF;
+    font-weight: bold;
+}
+.lp-button:hover{
+	opacity: .9;
+	cursor: pointer;
+}
+
+.learnpress #banner { display: none;  }
+.learnpress .course-nav-tab-instructor { display: none;  }
+.learnpress #comments { display: none;  }
+
+
+.app-navbar{
+	transition: 300ms;
+}

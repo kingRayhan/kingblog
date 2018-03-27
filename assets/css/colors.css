@@ -1,7 +1,8 @@
 :root{
 	--black: #333;
-	--primary: var(--yellow);
+	--primary: var(--blue);
 	--yellow: #FFC600;
+	--blue: #1e73be;
 	--sky: #56C6C0;
 	--lightgrey: #848484;
 }

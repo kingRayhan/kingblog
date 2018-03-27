@@ -12,6 +12,7 @@ global $theme;
 
 ?>
 </div><!-- #app (start at header.php ) -->
+</div><!-- #page-content (start at header.php ) -->
 
 	<footer id="site-footer">
 		<div class="container text-center">
