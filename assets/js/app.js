@@ -29,15 +29,18 @@ jQuery(document).ready( function($){
 
 
 const AppNavbar = document.querySelector('.app-navbar');
+let lastScrollPosition = 0;
+window.addEventListener( 'scroll' , function(){
+	let currentScrollPosition = window.scrollY;
 
-let LastScrollPosition = 0;
-window.addEventListener( 'scroll' , function(event){
-	var scrollPositionNow = window.scrollY;
-	if(scrollPositionNow > LastScrollPosition)
+	if( currentScrollPosition > lastScrollPosition )
 	{
-		AppNavbar.classList.remove('sticky-top');
+		AppNavbar.classList.remove('sticky-nav')
 	}else{
-		AppNavbar.classList.add('sticky-top');
+		AppNavbar.classList.add('sticky-nav')
 	}
-	LastScrollPosition = scrollPositionNow;
+
+
+
+	lastScrollPosition = window.scrollY;
 } )

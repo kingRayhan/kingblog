@@ -11,6 +11,14 @@
     	@include font-zilla;
     	font-size: 30px;
     }
+
+    position: sticky;
+    top: -100px;
+    z-index: 1020;
+    transition: 300ms;
+    &.sticky-nav{
+    	top: 0;
+    }
 }
 
 

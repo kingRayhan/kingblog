@@ -194,7 +194,7 @@ object {
 
 
 
-.learnpress .single-page-article{
+/*.learnpress .single-page-article{
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -230,9 +230,4 @@ object {
 
 .learnpress #banner { display: none;  }
 .learnpress .course-nav-tab-instructor { display: none;  }
-.learnpress #comments { display: none;  }
-
-
-.app-navbar{
-	transition: 300ms;
-}
+.learnpress #comments { display: none;  }*/

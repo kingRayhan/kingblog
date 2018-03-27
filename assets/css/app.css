@@ -33,7 +33,11 @@ blockquote {
 
 .app-navbar {
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
-  background-color: #FFF; }
+  background-color: #FFF;
+  position: sticky;
+  top: -100px;
+  z-index: 1020;
+  transition: 300ms; }
   .app-navbar a {
     color: var(--black); }
     .app-navbar a:hover {
@@ -41,6 +45,8 @@ blockquote {
   .app-navbar .navbar-brand {
     font-family: 'Zilla Slab', serif;
     font-size: 30px; }
+  .app-navbar.sticky-nav {
+    top: 0; }
 
 .footer-bottom {
   padding: 15px 0;
